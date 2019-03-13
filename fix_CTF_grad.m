@@ -1,8 +1,9 @@
 function [data] = fix_CTF_grad(headerpath, data)
 % FIX_CTF_GRAD rebases the CTF coordinate system of the gradiometer positions
 % on average subject head position during the experiment (instead of the 
-% initial position), which will increase source localisation precision.
-% Headposition must have been recorded continously in the CTF headtracking 
+% initial position), which will decrease source localisation bias induced 
+% by head motion.
+% Head position must have been recorded continously in the CTF headtracking 
 % channels. Has (so far) only been tested for CTF275 systems.
 %
 % Use as
