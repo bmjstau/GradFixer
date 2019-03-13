@@ -119,6 +119,8 @@ end
     
 %% Replace grad field of the data structure with the headmovement-corrected
 % grad.
+ft_notice(['replacing channel- and coil-orientation and -position with '...
+    'headmotion-corrected ones']);
 newGrad = data.grad;
 newGrad.chanpos = chanPos;
 newGrad.chanori = chanOri;
